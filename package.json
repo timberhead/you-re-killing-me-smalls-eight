@@ -1,0 +1,28 @@
+{
+  "name": "you-re-killing-me-smalls-eight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories":{
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timberhead/you-re-killing-me-smalls-eight.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timberhead/you-re-killing-me-smalls-eight/issues"
+  },
+  "homepage": "https://github.com/timberhead/you-re-killing-me-smalls-eight#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.0.2"
+  }
+}
