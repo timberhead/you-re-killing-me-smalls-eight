@@ -9,9 +9,9 @@ const Engineer = require("../lib/Engineer.js");
 describe("newEngineer", () => {
 
     it("Can create a github.", () => {
-        const testGithub = "Spencer";
+        const testGithub = "github.com/spencer";
         const employeeInformation = new Engineer("Spencer", 21, "Spencer@CUBuffs.org", testGithub);
-        expect(employeeInformation.gitHub).toBe(testGithub);
+        expect(employeeInformation.github).toBe(testGithub);
     });
 });
 
@@ -22,7 +22,7 @@ describe("getMethods", () => {
     it("Testing the getGithub method will return github.", () => {
         const testGithub = "Spencer";
         const employeeInformation = new Engineer("Spencer", 21, "Spencer@CUBuffs.org", testGithub);
-        expect(employeeInformation.getGitHub()).toBe(testGithub);
+        expect(employeeInformation.getGithub()).toBe(testGithub);
     });
 
 

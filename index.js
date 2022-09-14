@@ -10,8 +10,8 @@ const path = require("path");
 const fs = require("fs");
 
 
-const OUTPUT_DIR = path.resolve(__dirname, "data");
-const outputPath = path.join(OUTPUT_DIR, "generate.js");
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
+const outputPath = path.join(OUTPUT_DIR, "generate.html");
 const generateTeam = require("./src/generate.js");
 
 
@@ -166,7 +166,7 @@ function createTeam() {
         function htmlBuilder() {
           console.log("This is your Team!");
           
-          fs.writeFile(outputPath, generateTeam(teamArray));
+          fs.writeFileSync(outputPath, generateTeam(teamArray), "utf-8");
           
         }
         

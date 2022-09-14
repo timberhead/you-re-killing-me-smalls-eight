@@ -27,8 +27,8 @@ describe("getMethods", () => {
 
 
     it("Testing the getRole method.", () => {
-        const testOfficeNumber = 5;
-        const employeeInformation = new Manager("Brian", 5, "bcool@yahoo.com", testOfficeNumber);
+        const returnValue = "Manager";
+        const employeeInformation = new Manager("Brian", 5, "bcool@yahoo.com", returnValue);
         expect(employeeInformation.getRole()).toBe(returnValue);
     });
 });

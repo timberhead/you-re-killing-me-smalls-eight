@@ -27,7 +27,7 @@ describe("newEmployee", () => {
 
     it("Testing email.", () => {
         const email = "kyletheintern@gmail.com";
-        const employeeInformtion = new Employee("Kyle", id, email);
+        const employeeInformtion = new Employee("Kyle", "404", email);
         expect(employeeInformtion.email).toBe(email);
     });
 });
@@ -39,7 +39,7 @@ describe("getMethods", () => {
     it("Can get name through the getName method.", () => {
         const testName = "Kyle";
         const employeeInformation = new Employee(testName);
-        expect(employeeInformation.getName).toBe(testName);
+        expect(employeeInformation.getName()).toBe(testName);
     });
 
     it("Can test id through the getID method.", () => {
